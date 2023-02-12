@@ -1,0 +1,181 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+   
+    text-decoration: none;
+}
+.row::after{
+    content:"";
+    display: block;
+    clear:both;
+}
+.left{
+    float: left;
+}
+.right{
+    float:right;
+}
+/* ul{
+    display: none;
+} */
+.container{
+    height: 100%;
+    width: 100%;   
+    margin: 0 auto;
+}
+    
+#header{
+    background-color: #179f88;
+    position: fixed;
+    width: 100%;
+
+    z-index: 1;
+}
+.col-1{
+    width: 58%;
+    padding-top: 9px; 
+}
+.col-2{
+    width: 38%;
+}
+.logo{
+    width: 15%;
+}
+
+.search{
+    width: 80%;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+.search input[type="text"]{
+    width: 100%;
+    height: 26px;
+}
+img{
+    width: 100%;
+}
+.col-2 > ul > li{
+    display: inline-block;
+    
+    margin: 0px 15px;
+    /* width: 19%; */
+    text-align: center;
+    position: relative;
+    margin-top: 3.5%;
+    
+}
+.col-2 .dropdown{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    width: 200%;
+    left: -50%;
+    display: none; 
+    top: 57px;
+
+  
+       
+}
+.col-2 > ul > li:first-child {
+    width: 21%;
+    padding: 15px 0px;
+ 
+}
+.col-2 > ul > li:first-child > span {
+    display: block;
+    background-color: white;
+    padding: 4px 7px;
+    cursor: pointer;
+    color: #18420b;
+    
+    
+}
+.col-2 ul li:hover .dropdown{
+    display: block;
+}
+.col-2 .dropdown ul li a:hover{
+    background-color: #F9F9F9;
+
+}
+.col-2 .dropdown ul li a {
+    padding: 15px 15px;
+    display: block;
+    color: black;
+    border-bottom: 1px solid #e0e0e0;
+    
+}
+.col-2 .dropdown ul li a i{
+       color: #2874F0;
+       margin-right: 5px;
+}
+.col-2 > ul > li > a{
+    color: white;
+    display: block;
+    padding: 16px 0px;
+    text-decoration: none;
+    
+    
+}
+/* #banner{
+    margin-top: 70px;
+} */
+/* #banner img{
+    width: 100%;
+    max-height: 400px;
+} */
+#section-1 h2, 
+#section-2 h2{
+    margin-bottom: 30px;
+}
+
+#section-1, #section-2 {
+    padding: 30px 0px;
+}
+
+.product{
+    display: inline-block;
+    width:16%;
+    border-color: red;
+    text-align: center;
+    border: 1px solid;
+    padding: 10px 10px;
+    position: relative;
+}
+.product img{
+    width: 100%;
+    position: relative;
+}
+.product .wishList{
+    
+    position:absolute;
+    top: 0px;
+    right:0px;
+
+}
+.product .add-to-cart{
+    position: absolute;
+    top:40%;
+    left: 0px;
+    width: 100%;
+    display: none;
+
+}
+.product .add-to-cart button{
+    border: 1px solid #2874F0;
+    background-color: #2874F0;
+    color: aliceblue;
+    width: 100%;
+
+}
+.product:hover .add-to-cart{
+    display: block;
+}
+#login{
+    background-color: white;
+    width: 91px;
+    height: 31px;
+    color: #1c591c;
+    border: #055d05;
+}
